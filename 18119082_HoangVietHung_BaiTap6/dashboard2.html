@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CUOI KI</title>
+	<!-- Link lib -->
+	<!-- Link font and icon -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Link Bootstrap lib -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Link css -->
+	<link rel="stylesheet" type="text/css" href="dashboard2.css">
+</head>
+<body onload="Realtime()">
+	<div class="datetime" id="clockId"></div>
+	<section>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+	</section>
+	<div class="main_box">
+	    <input type="checkbox" id="check1">
+	    <div class="btn_one">
+	      <label for="check1">
+	        <i class="fas fa-bars"></i>
+	      </label>
+	    </div>
+	    <div class="sidebar_menu">
+	      <div class="logo">
+	        <a href="#">SmartHome</a>
+	          </div>
+	        <div class="btn_two">
+	          <label for="check1">
+	            <i class="fas fa-times"></i>
+	          </label>
+	        </div>
+	      	<div class="menu">
+		        <ul>
+			        <li>
+			        	<i class="fas fa-qrcode ht"></i>
+			            <a class="ht" href="file:///D:/2020-2021%20HKII/Basic%20and%20Application%20of%20IoTs%20(Pratice%20class)/Homework/18119082_HoangVietHung_BaiTap6/dashboard2.html">Dashboard</a>
+			        </li>
+			        <li>
+			            <i class="fas fa-user ht"></i>
+			            <a class="ht" href="#">Users</a>
+			        </li>
+			        <li>
+			            <i class="fas fa-link ht"></i>
+			            <a class="ht" href="#">Shortcuts</a>
+			        </li>
+			        <li>
+			            <i class="fas fa-stream ht"></i>
+			            <a class="ht" href="#">Overview</a>
+			        </li>
+			        <li>
+			            <i class="fas fa-calendar-week ht"></i>
+			            <a class="ht" href="#">Events</a>
+			        </li>
+			        <li>
+			            <i class="fas fa-question-circle ht"></i>
+			            <a class="ht" href="#">About</a>
+			        </li>
+			        <li>
+			            <i class="fas fa-sliders-h ht"></i>
+			            <a class="ht" href="#">Services</a>
+			        </li>
+			        <li>
+			            <i class="fas fa-phone-volume ht"></i>
+			            <a class="ht" href="#">Contact</a>
+			        </li>
+			        <li>
+			          	<i class="far fa-comments ht"></i>
+			            <a class="ht" href="#">Feedback</a>
+			        </li>
+			        <li>
+			          	<i class="fas fa-cogs ht"></i>
+			            <a class="ht" href="#">Setting</a>
+			        </li>
+			        <li>
+			          	<i class="fas fa-sign-out-alt ht"></i>
+			            <a class="ht" href="file:///D:/2020-2021%20HKII/Basic%20and%20Application%20of%20IoTs%20(Pratice%20class)/Homework/18119082_HoangVietHung_BaiTap6/login%20page.html">Logout</a>
+			        </li>
+		        </ul>
+	      	</div>
+	      <div class="social_media">
+	        <ul>
+	          <a href="#" title="FACEBOOK"><i class="fab fa-facebook-f"></i></a>
+	          <a href="#" title="TWITTER"><i class="fab fa-twitter"></i></a>
+	          <a href="#" title="INSTAGRAM"><i class="fab fa-instagram"></i></a>
+	          <a href="#" title="YOUTUBE"><i class="fab fa-youtube"></i></a>
+	        </ul>
+	      </div>
+	    </div>
+    </div>
+	<div class="frame">
+		<div class="navbar">
+			<div class="notes">12</div>
+			<ul class="navbar-nav">
+				<li class=" navbar-item">
+					<img style="padding-left: 50px; border-radius: 0px;" src="./img/Home+Icon.png">
+				</li>
+				<li class="navbar-item" style="padding-left: 3px; padding-top: 2px; font-size: 27px;font-family: 'Reggae One', cursive; cursor: pointer;">D 
+				</li>
+				<li class="navbar-item" style="padding-top: 10px; font-size: 20px; font-family:  'Roboto', sans-serif; float: left; cursor: pointer;">
+				ASHBOARD
+				</li>
+				<li style="padding-left: 300px;"><img src="./img/luo.png"></li>
+				<li style="padding-left: 15px;"><i class="fas fa-bell"></i></li>
+			</ul>
+
+		</div>
+		<div class="weather-frame">
+			<div class="f">
+				<img src="./img/sun.png" style="width: 70px; height: 65px;">
+				<a href="#"style="text-decoration: none; color: black;font-family: 'Lato', sans-serif; font-size: 44px; font-weight: 550; padding-left: 12px; padding-top: 12px;">
+					Cloudy
+				</a>
+			</div>
+		</div>
+		<div class="weather-info">
+			<ul class="frame-info" style="list-style: none; font-family: 'Lato', sans-serif;">
+				<li style="font-size: 20px; font-weight: 700;">
+					26°C </br> <span style="font-size: 17px;color: #adabab; font-weight: 550;">Indoor Temp</span>
+				</li>
+				<li style="font-size: 20px; font-weight: 700;">
+					48.2% </br> <span style="font-size: 17px;color: #adabab; font-weight: 550;">Indoor Humid</span>
+				</li>
+				<li style="font-size: 20px; font-weight: 700;">
+					52.9°C </br><span style="font-size: 17px; color: #adabab; font-weight: 550;">Outdoor Temp</span>
+				</li>
+				<li style="font-size: 20px; font-weight: 700;">
+					65.1% </br><span style="font-size: 17px; color: #adabab; font-weight: 550;">Outdoor Humid</span>
+				</li>
+			</ul>
+		</div>
+		<div class="tabs">
+			<div class="tab-header">
+				<div class="active h">Living Room</br></div>
+				<div class="h">Bed Room</br></div>
+				<div class="h">Bath Room</br></div>
+				<div class="h">Dining Room</br></div>
+			</div> 
+			<div class="tab-body">
+				<div class="active h">
+		            <div class="devices">
+		            	<div class="item i1">
+				            <div class="item__show">
+				                <img src="./img/air-conditioner_off.png" alt="">
+				                <div class="btn--switch">
+				                    <input type="checkbox" id="myCheck" onclick="myFunction()">
+				                    <canvas id="canvas" width="25px" height="25px"></canvas>
+				                </div>
+				            </div>
+				            <div class="item__descriptions">
+				                <h3>Ari-conditioner</h3>
+				                <p id="textOFF1">OFF</p>
+				                <p class="in 1" id="textON1">ON</p>
+				            </div>
+				        </div>
+				        <div class="item i2">
+				            <div class="item__show">
+				                <img src="./img/lamp.png" style="padding-top: 6px;" alt="">
+				                <div class="btn--switch">
+				                    <input type="checkbox" id="myCheck2" onclick="myFunction()">
+				                    <canvas id="canvas2" width="25px" height="25px"></canvas>
+				                </div>
+				            </div>
+				            <div class="item__descriptions">
+				                <h3>LED Lamp</h3>
+				                <p id="textOFF2">OFF</p>
+				                <p class="in 2" id="textON2">ON</p>
+				            </div>
+				        </div>
+				        <div class="item i3">
+				            <div class="item__show">
+				                <img src="./img/television.png" style="padding-top: 6px;" alt="">
+				                <div class="btn--switch">
+				                    <input type="checkbox" id="myCheck3" onclick="myFunction()">
+				                    <canvas id="canvas3" width="25px" height="25px"></canvas>
+				                </div>
+				            </div>
+				            <div class="item__descriptions">
+				                <h3>Smart TV</h3>
+				                <p id="textOFF3">OFF</p>
+				                <p class="in 3" id="textON3">ON</p>
+				            </div>
+				        </div>
+				        <div class="item i4">
+				            <div class="item__show">
+				                <img src="./img/router.png" alt="">
+				                <div class="btn--switch">
+				                    <input type="checkbox" id="myCheck4" onclick="myFunction()">
+				                    <canvas id="canvas4" width="25px" height="25px"></canvas>
+				                </div>
+				            </div>
+				            <div class="item__descriptions">
+				                <h3>Wifi Router</h3>
+				                <p id="textOFF4">OFF</p>
+				                <p class="in 4" id="textON4">ON</p>
+				            </div>
+       					</div>
+		            </div>
+	          	</div>
+	          	<div class="h">
+		            <div class="appliances">
+					    <div class="appliance a1">
+					      	<input type="checkbox" name="a" id="a">
+					      	<label for="a">
+						        <i class="l"></i>
+						        <strong>Sleep Lamp</strong>
+						        <span data-o="opened" data-c="closed"></span>
+						        <small></small>
+					        </label>
+					    </div>
+					      
+					    <div class="appliance a2">
+					        <input type="checkbox" name="a" id="b">
+					        <label for="b" style="margin-left: 24px;">
+					          	<i class="r"></i>
+					          	<strong>Wifi</strong>
+					          	<span data-o="opened" data-c="closed"></span>
+					          	<small></small>
+					        </label>
+					    </div>
+					      
+					    <div class="appliance a3">
+					        <input type="checkbox" name="a" id="c">
+					        <label for="c">
+					          	<i class="a"></i>
+					          	<strong>Air-conditioner</strong>
+					          	<span data-o="opened" data-c="closed"></span>
+					          	<small></small>
+					        </label>
+					    </div>
+					      
+					    <div class="appliance a4">
+					        <input type="checkbox" name="a" id="d">
+					        <label for="d" style="margin-left: 24px;">
+					          	<i class="f"></i>
+					          	<strong>Refrigerator</strong>
+					          	<span data-o="opened" data-c="closed"></span>
+					          	<small></small>
+					        </label>
+					    </div>
+	         	 	</div>
+	         	</div>
+	          	<div class="h">
+		            <div class="itembaths">
+		            	<div class="itembath">
+		            		<input type="checkbox" id="checkboxbath_1">
+		            		<label for="checkboxbath_1">
+		            			<img class="staticpic" src="./img/led.png" style="width: 200px; height: 170px;position: absolute; top: 20px; left: 65px;">
+		            			<img src="./img/led.gif" class="picdy1">
+		            		</label>
+		            		<p class="textbath">BATHROOM LAMP</p>
+		            	</div>
+		            	<div class="itembath">
+		            		<input type="checkbox" id="checkboxbath_2">
+		            		<label for="checkboxbath_2">
+		            			<img class="staticpic" src="./img/watertab.png" style="width: 200px; height: 170px;position: absolute; top: 20px; right: 71px;">
+		            			<img src="./img/watertap.gif" class="picdy2">
+		            		</label>
+		            		<p class="textbath">WATERTAP</p>
+		            	</div>
+		            	<div class="itembath_2">
+		            		<input type="checkbox" id="checkboxbath_3">
+		            		<label for="checkboxbath_3">
+		            			<img class="staticpic" src="./img/bathtub.png" style="width: 400px; height: 192px; position: absolute; top: 291px; right: 112px;">
+		            			<img src="./img/bathtub.gif" class="picdy3">
+		            		</label>
+		            		<p class="textbath">BATHTUB</p>
+		            	</div>
+	        		</div>
+	          	<div class="h">
+		            <div class="appliances">
+					    <div class="appliance">
+					      	<input type="checkbox" name="a" id="a">
+					      	<label for="a">
+						        <i class="l"></i>
+						        <strong>Sleep Lamp</strong>
+						        <span data-o="opened" data-c="closed"></span>
+						        <small></small>
+					        </label>
+					    </div>
+					      
+					    <div class="appliance">
+					        <input type="checkbox" name="a" id="b">
+					        <label for="b" style="margin-left: 24px;">
+					          	<i class="r"></i>
+					          	<strong>Wifi</strong>
+					          	<span data-o="opened" data-c="closed"></span>
+					          	<small></small>
+					        </label>
+					    </div>
+					      
+					    <div class="appliance">
+					        <input type="checkbox" name="a" id="c">
+					        <label for="c">
+					          	<i class="a"></i>
+					          	<strong>Air-conditioner</strong>
+					          	<span data-o="opened" data-c="closed"></span>
+					          	<small></small>
+					        </label>
+					    </div>
+					      
+					    <div class="appliance">
+					        <input type="checkbox" name="a" id="d">
+					        <label for="d" style="margin-left: 24px;">
+					          	<i class="f"></i>
+					          	<strong>Refrigerator</strong>
+					          	<span data-o="opened" data-c="closed"></span>
+					          	<small></small>
+					        </label>
+					    </div>
+	         	 	</div>
+	          	</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script type="text/javascript" src="vanilla-tilt.js"></script>
+	<script type="text/javascript">
+		VanillaTilt.init(document.querySelector(".i1"), {
+			max: 25,
+			speed: 400
+		});
+		VanillaTilt.init(document.querySelector(".i2"), {
+			max: 25,
+			speed: 400
+		});
+		VanillaTilt.init(document.querySelector(".i3"), {
+			max: 25,
+			speed: 400
+		});
+		VanillaTilt.init(document.querySelector(".i4"), {
+			max: 25,
+			speed: 400
+		});
+		VanillaTilt.init(document.querySelector(".a1"), {
+			max: 25,
+			speed: 400
+		});
+		VanillaTilt.init(document.querySelector(".a2"), {
+			max: 25,
+			speed: 400
+		});
+		VanillaTilt.init(document.querySelector(".a3"), {
+			max: 25,
+			speed: 400
+		});
+		VanillaTilt.init(document.querySelector(".a4"), {
+			max: 25,
+			speed: 400
+		});
+	</script> -->
+	<script type="text/javascript" src="dashboard2.js"></script>
+</body>
+</html>

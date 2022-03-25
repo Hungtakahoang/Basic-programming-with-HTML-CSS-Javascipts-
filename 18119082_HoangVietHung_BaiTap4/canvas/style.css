@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.main .item {
+    width: calc( 100% / 2 - 10px);
+    background-color: #d1d8e0;
+    height: 42vh;
+    border-radius: 15px;
+    padding: 30px 50px;
+}
+
+.item .item__show {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.item .item__show img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.btn--switch {
+    position: relative;
+}
+
+.btn--switch canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.btn--switch input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 60px;
+    height: 25px;
+    background: #a5b1c2;
+    color: red;
+    border-radius: 16px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: all .2s ease-out;
+}
+
+.btn--switch input[type="checkbox"]:checked {
+    background: linear-gradient(to right, #ffb75e, #ed8f03);
+}
+.btn--switch input[type="checkbox"]:checked+.item_descriptions{
+    color: linear-gradient(to right, #fff, #ed8f03);
+}
+
+.btn--switch input[type="checkbox"]:checked+canvas {
+    left: 35px;
+}
+
+.item.active {
+    background-color: #f6e58d;
+    transition: all .5s ease-in;
+}
+
+.item__descriptions p {
+    margin-top: 15px;
+    font-size: 18px;
+}

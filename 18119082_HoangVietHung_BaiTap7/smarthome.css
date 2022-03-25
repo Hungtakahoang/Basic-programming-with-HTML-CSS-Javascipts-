@@ -1,0 +1,723 @@
+section .color {
+	position: absolute;
+	filter: blur(150px);
+}
+section .color:nth-child(1) {
+	top: 50px;
+    left: 281px;
+    width: 900px;
+    height: 400px;
+    background: #520652;
+}
+section .color:nth-child(2) {
+	top: 350px;
+    left: 200px;
+    width: 468px;
+    height: 400px;
+    background: #080875;
+}
+section .color:nth-child(3) {
+	top: 350px;
+    right: 150px;
+    width: 476px;
+    height: 400px;
+    background: black;
+}
+body {
+	padding:0;
+	margin: 0;
+}
+.frame {
+	position: absolute;
+    top: 10px;
+    left: 310px;
+    background: #fff;
+    width: 852px;
+    height: calc(100% - 25px);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.topheader {
+	width: 100%;
+	height: 20px;
+	background:linear-gradient(45deg,#520652,#080875,#000);
+	border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+} 
+.topheader1{
+	text-align: center;
+	background: #4420b3;
+	width: 100%;
+	height: 50px;
+}
+.topheader1 > p {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	margin: unset;
+	font-weight: 900;
+}
+.fontheader {
+	padding-top: 15px;
+}
+.menuleft{
+	float: left;
+	width: 230px;
+	height: 653.1px;
+	background: #e8e8e8;
+	border-bottom-left-radius: 10px;
+}
+.deviceright {
+	float: left;
+	width: 622px;
+	height: 653.1px;
+	border-bottom-right-radius: 10px;
+}
+.searchline {
+	width: 200px;
+	height: 40px;
+	border-radius: 20px;
+	border:none;
+	color: gray;
+	background: #fff;
+	margin-top: 20px;
+	margin-left: 13px;
+}
+.menuleft form i {
+	position: absolute;
+	top: 95px;
+	left: 190px;
+}
+
+.menuleft .room {
+	width: 200px;
+	margin-left: 13px;
+	margin-top: 20px;
+	background: #fff;
+	height: 140px;
+	border-radius: 10px;
+}
+.menuleft .room img {
+	width: 200px;
+	max-height: 100px;
+	border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room .cover-flat1 {
+	position: absolute;
+    top: 152px;
+    left: 13px;
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(90deg, #37048882 ,#fc2cff00);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room .cover-flat2 {
+	position: absolute;
+    top: 152px;
+    left: 13px;
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(270deg, #a509a58a ,#fc2cff00);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room .cover-icon{
+	position: absolute;
+    top: 167px;
+    left: 28px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+}
+.menuleft .room .cover-icon .h1 {
+	margin-top: 10px;
+	font-size: 25px;
+	color: #989494;
+}
+.menuleft .room .cover-text{
+	position: absolute;
+    top: 196px;
+    left: 28px;
+}
+.menuleft .room .cover-text .cover-font{
+	font-weight: 900px;
+	font-size: 25px;
+	color: #fff;
+}
+.menuleft .room .cover-text1 {
+	position: absolute;
+    top: 252px;
+    left: 13px;    
+    background-color: #fff;
+    height: 40px;
+    width: 100px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.menuleft .room .cover-text2 {
+	position: absolute;
+    top: 252px;
+    left: 113px;    
+    background-color: #fff;
+    height: 40px;
+    width: 100px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.menuleft .room .cover-text2 .cover-font1 {
+	margin-top: 9px;
+}
+.menuleft .room .cover-text1 .cover-font1 {
+	margin-top: 9px;
+}
+#checkboxBe {
+	display: none;
+}
+
+.menuleft .room2 {
+	width: 200px;
+	margin-left: 13px;
+	margin-top: 20px;
+	background: #fff;
+	height: 140px;
+	border-radius: 10px;
+}
+.menuleft .room2 img {
+	width: 200px;
+	max-height: 100px;
+	border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room2 .cover-flat3 {
+	position: absolute;
+    top: 312px;
+    left: 13px;
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(90deg, #b8fd118a ,#fc2cff00);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room2 .cover-flat4 {
+	position: absolute;
+    top: 312px;
+    left: 13px;
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(270deg, #0eb1048a ,#fc2cff00);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room2 .cover-icon2{
+	position: absolute;
+    top: 327px;
+    left: 28px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+}
+.menuleft .room2 .cover-icon2 .h2 {
+	margin-top: 10px;
+	font-size: 25px;
+	color: #989494;
+}
+.menuleft .room2 .cover-texta{
+	position: absolute;
+    top: 356px;
+    left: 28px;
+}
+.menuleft .room2 .cover-texta .cover-font{
+	font-weight: 900px;
+	font-size: 25px;
+	color: #fff;
+}
+.menuleft .room2 .cover-texta1 {
+	position: absolute;
+    top: 412px;
+    left: 13px;    
+    background-color: #fff;
+    height: 40px;
+    width: 100px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.menuleft .room2 .cover-texta2 {
+	position: absolute;
+    top: 412px;
+    left: 113px;    
+    background-color: #fff;
+    height: 40px;
+    width: 100px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.menuleft .room2 .cover-texta2 .cover-font1 {
+	margin-top: 9px;
+}
+.menuleft .room2 .cover-texta1 .cover-font1 {
+	margin-top: 9px;
+}
+#checkboxSe {
+	display: none;
+}
+.menuleft .room3 {
+	width: 200px;
+	margin-left: 13px;
+	margin-top: 20px;
+	background: #fff;
+	height: 140px;
+	border-radius: 10px;
+}
+.menuleft .room3 img {
+	width: 200px;
+	max-height: 100px;
+	border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room3 .cover-flat5 {
+	position: absolute;
+    top: 472px;
+    left: 13px;
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(90deg, #0b028eab ,#fc2cff00);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room3 .cover-flat6 {
+	position: absolute;
+    top: 472px;
+    left: 13px;
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(270deg, #8e4902ab ,#fc2cff00);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.menuleft .room3 .cover-icon3{
+	position: absolute;
+    top: 487px;
+    left: 28px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+}
+.menuleft .room3 .cover-icon3 .h3 {
+	margin-top: 10.9px;
+	font-size: 29px;
+	color: #989494;
+}
+.menuleft .room3 .cover-textb{
+	position: absolute;	
+    top: 516px;
+    left: 28px;
+}
+.menuleft .room3 .cover-textb .cover-font{
+	font-weight: 900px;
+	font-size: 25px;
+	color: #fff;
+}
+.menuleft .room3 .cover-textb1 {
+	position: absolute;
+    top: 572px;
+    left: 13px;    
+    background-color: #fff;
+    height: 40px;
+    width: 100px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.menuleft .room3 .cover-textb2 {
+	position: absolute;
+    top: 572px;
+    left: 113px;    
+    background-color: #fff;
+    height: 40px;
+    width: 100px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.menuleft .room3 .cover-textb2 .cover-font1 {
+	margin-top: 9px;
+}
+.menuleft .room3 .cover-textb1 .cover-font1 {
+	margin-top: 9px;
+}
+.deviceright .frame_livingroom{
+	width: 100%;
+	height: 100%;
+    display: block;
+}
+.deviceright .frame_livingroom .room_name {
+	width: 100%;
+	height: 120px;
+}
+.deviceright .frame_livingroom .room_name .cover-icon4 {
+	position: absolute;
+    top: 90px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+  	background: linear-gradient(90deg, #37048882 ,#fc2cff00);
+    text-align: center;
+}
+.deviceright .frame_livingroom .room_name .cover-icon5 {
+	position: absolute;
+    top: 90px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+  	background: linear-gradient(270deg, #a509a58a ,#fc2cff00);
+    text-align: center;
+}
+.deviceright .frame_livingroom .room_name .cover-icon4 .h4 {
+	margin-top: 10.9px;
+	font-size: 29px;
+	color: #fff;
+	z-index: 0;
+}
+.deviceright .frame_livingroom .room_name p{
+	margin-bottom: unset;
+}
+.deviceright .frame_livingroom .room_name .name1 {
+	padding-top: 50px;
+	padding-left: 20px;
+	font-weight:900;
+	font-size: 30px;
+}
+.deviceright .frame_livingroom .room_name .horizonline {
+	position: absolute;
+    width: 581px;
+    height: 4px;
+    background-color: #e0dcdc;
+    left: 250px;
+    top: 194px;
+}
+.deviceright .frame_livingroom .devicesname {
+	width: 100%;
+	height: 500px;
+	margin-left: 15.5px;
+}
+.deviceright .frame_livingroom .devicesname .devices {
+	width: 250px;
+	height: 200px;
+	background-color: #fff;
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	border: 1px solid #e0dcdc;
+}
+.deviceright .frame_livingroom .devicesname .devices:hover {
+	display: inline-block;
+	transition: 0.6s;
+	box-shadow: 0 0px 10px #bbb8b8;
+}
+.deviceright .frame_livingroom .devicesname .devices .staticpic {
+	width: 250px;
+	height: 200px;
+	border-radius: 20px;
+}
+.deviceright .frame_livingroom .devicesname .devices .staticpic:hover {
+	cursor: pointer;
+}
+.deviceright .frame_livingroom .devicesname .devices .dynamicpic {
+	width: 250px;
+	height: 200px;
+	display: none;
+	z-index: 1;
+	border-radius: 20px;
+}
+.deviceright .frame_livingroom .devicesname .devices .dynamicpic:hover {
+	cursor: pointer;
+}
+.deviceright .frame_livingroom .devicesname .devices .dynamicpic2:hover {
+	cursor: pointer;
+}
+#devicecheck1{
+	display: none;
+} 
+#devicecheck1:checked ~ label img.dynamicpic {
+	display: block;
+}
+#devicecheck1:checked ~ label img.staticpic {
+	display: none;
+}
+
+.deviceright .frame_livingroom .devicesname .devices .dynamicpic2 {
+	width: 250px;
+	height: 200px;
+	display: none;
+	z-index: 1;
+	border-radius: 20px;
+}
+#devicecheck2 {
+	display: none;
+}
+#devicecheck2:checked ~ label img.dynamicpic2 {
+	display: block;
+}
+#devicecheck2:checked ~ label img.staticpic {
+	display: none;
+}
+.datetime {
+	position: absolute;
+    top: 92px;
+    left: 925px;
+    z-index: 10;
+}
+.frame_bedroom {
+    display: none;
+}
+.deviceright .frame_bedroom{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.deviceright .frame_bedroom .room_name {
+    width: 100%;
+    height: 120px;
+}
+.deviceright .frame_bedroom .room_name .cover-icon4 {
+    position: absolute;
+    top: 90px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #b8fd118a ,#fc2cff00);
+    text-align: center;
+}
+.deviceright .frame_bedroom .room_name .cover-icon5 {
+    position: absolute;
+    top: 90px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(270deg, #0eb1048a ,#fc2cff00);
+    text-align: center;
+}
+.deviceright .frame_bedroom .room_name .cover-icon4 .h4 {
+    margin-top: 10.9px;
+    font-size: 29px;
+    color: #fff;
+    z-index: 0;
+}
+.deviceright .frame_bedroom .room_name p{
+    margin-bottom: unset;
+}
+.deviceright .frame_bedroom .room_name .name1 {
+    padding-top: 50px;
+    padding-left: 20px;
+    font-weight:900;
+    font-size: 30px;
+}
+.deviceright .frame_bedroom .room_name .horizonline {
+    position: absolute;
+    width: 581px;
+    height: 4px;
+    background-color: #e0dcdc;
+    left: 250px;
+    top: 194px;
+}
+.deviceright .frame_bedroom .devicesname {
+    width: 100%;
+    height: 500px;
+    margin-left: 15.5px;
+}
+.deviceright .frame_bedroom .devicesname .devices {
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 1px solid #e0dcdc;
+}
+.deviceright .frame_bedroom .devicesname .devices:hover {
+    display: inline-block;
+    transition: 0.6s;
+    box-shadow: 0 0px 10px #bbb8b8;
+}
+.deviceright .frame_bedroom .devicesname .devices .staticpic1 {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+.deviceright .frame_bedroom .devicesname .devices .staticpic1:hover {
+    cursor: pointer;
+}
+.deviceright .frame_bedroom .devicesname .devices .dynamicpic11 {
+    width: 250px;
+    height: 200px;
+    display: none;
+    z-index: 1;
+    border-radius: 20px;
+}
+.deviceright .frame_bedroom .devicesname .devices .dynamicpic11:hover {
+    cursor: pointer;
+}
+.deviceright .frame_bedroom .devicesname .devices .dynamicpic12:hover {
+    cursor: pointer;
+}
+
+.deviceright .frame_bedroom .devicesname .devices .dynamicpic12 {
+    width: 250px;
+    height: 200px;
+    display: none;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#devicecheck3{
+    display: none;
+} 
+#devicecheck3:checked ~ label img.dynamicpic11 {
+    display: block;
+}
+#devicecheck3:checked ~ label img.staticpic1 {
+    display: none;
+}
+#devicecheck4 {
+    display: none;
+}
+#devicecheck4:checked ~ label img.dynamicpic12 {
+    display: block;
+}
+#devicecheck4:checked ~ label img.staticpic1 {
+    display: none;
+}
+
+.deviceright .frame_setting {
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    display: none;
+}
+.deviceright .frame_setting .room_name .cover-icon6 {
+    position: absolute;
+    top: 90px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #0b028eab ,#fc2cff00);
+    text-align: center;
+}
+.deviceright .frame_setting .room_name .cover-icon7 {
+    position: absolute;
+    top: 90px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(270deg, #8e4902ab ,#fc2cff00);
+    text-align: center;
+}
+.deviceright .frame_setting .room_name .cover-icon7 .h4 {
+    margin-top: 10.9px;
+    font-size: 29px;
+    color: #fff;
+    z-index: 0;
+}
+.deviceright .frame_setting .room_name p{
+    margin-bottom: unset;
+}
+.deviceright .frame_setting .room_name .name1 {
+    padding-top: 50px;
+    padding-left: 20px;
+    font-weight:900;
+    font-size: 30px;
+}
+.deviceright .frame_setting .room_name .horizonline {
+    position: absolute;
+    width: 581px;
+    height: 4px;
+    background-color: #e0dcdc;
+    left: 250px;
+    top: 194px;
+}
+.frame_setting .settime {
+    margin-top: 20px;
+    padding-left: 20px; 
+}
+.frame_setting .settime .timecell{
+    padding-left: 10px;
+    width: 110px;
+    height: 50px;
+    border-radius: 50px;  
+    background: pink;
+    border:unset;  
+}
+.frame_setting .settime span {
+    font-size: 20px;
+    font-weight: 900;
+    color: #cc4058;
+}
+.frame_setting .settime input {
+    color: #cc4058;
+    font-size: 20px;
+}
+.frame_setting .settime .timecell:hover{
+    height: 55px;
+    box-shadow: 0 0 10px pink;
+}
+.frame_setting .settime .selbut {
+    margin-left: 266px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:1px solid pink;
+}
+.frame_setting .settime .selbut:hover {
+    box-shadow: 0 0 10px pink;
+}
+.frame_setting .settime .test1 {
+    position: absolute;
+    top: 379px;
+    left: 394px;
+    width: 300px;
+    height: 300px;
+    display: block;
+    border:1px solid pink;
+    border-radius: 50%;
+}
+.frame_setting .settime .test2 {
+    position: absolute;
+    top: 379px;
+    left: 394px;
+    width: 300px;
+    height: 300px;
+    display: none;
+    border:1px solid pink;
+    border-radius: 50%;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web_house_design_App</title>
+
+		<!--thư viện boot strap 4-->
+		<meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	  	<!--Thêm thư viện roundslider để code cái slider vòng tròn-->
+	  	<link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+  		<script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script> 
+
+	  	<!--liên kết css-->
+		<link rel="stylesheet" type="text/css" href="style2.css">
+	</head>
+	<body>
+
+		<!--tạo phần tiêu đề phía trên-->
+		<div class ="jumbotron header">
+			<div class ="container">
+				<div class ="row">
+					<div class ="col-md-3"> <!--col là cột, md là mediun kích thước bình thường chiếm 3 phần-->
+						<img src="img/logo5.png" class ="header_logo-img">
+					</div>
+					<div class ="col-md-9 header_banner"><!--col là cột, md là mediun kích thước bình thường chiếm 9 phần với lại thêm CSS header_banner-->
+						<img src="img/banner2.png" class ="header_banner-img">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--tạo phần nội dung phía dưới-->
+		<div class ="container">
+			<div class ="row">
+				<div class = "col-md-3"> <!--menu-->
+					<div class="pos-f-t">
+						<div class ="collapse" id ="navbarToggleExternalContent">
+							<div class ="bg-white-p-4">
+								<ul class ="navbar-nav">
+									<li class ="nav-item">
+										<a class ="nav-link" href="#"> Living Room</a>
+									</li>
+									<li class ="nav-item">
+										<a class ="nav-link" href="#"> Bed Room</a>
+									</li>
+									<li class ="nav-item">
+										<a class ="nav-link" href="#"> Bath Room</a>
+									</li>
+									<li class ="nav-item">
+										<a class ="nav-link" href="#"> Kitchen</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<nav class ="navbar bg-white navbar-light">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-control="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class ="navbar-toggler-icon"></span><span>Management</span>
+							</button>
+						</nav>
+					</div>
+				</div>
+				<div class ="col-md-9"> <!--content-->
+					<div class ="container text-center">
+						<div class ="row">
+
+							<div class ="col-md-4">
+								<div class ="card">
+									<img id="denId_01" class ="card-img-top" src="img/light_bulb.png" alt ="Card image" style ="width: 100%">
+									<div class ="card-body">
+										<!--chú thích nếu đặt card body ở đầu thì không thể code function được cho các button-->
+										<h6 class ="card-title"> Living-Room_MAIN LED</h6>
+										<a href="#" class ="btn btn-success" id ="btnOnId_01">ON</a>
+										<a href="#" class ="btn btn-danger" id ="btnOffId_01">OFF</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+					            <div class="card">
+					            	<img id="denId_02" class="card-img-top" src="./img/light_bulb.png" alt="Card image" style="width:100%">
+					            	<div class="card-body">
+					            		<h6>Living_Room SUB LED</h6>
+					              		<a href="#" class="btn btn-success" id="btnOnId_02">ON</a>
+					              		<a href="#" class="btn btn-danger" id="btnOffId_02">OFF</a>
+					            	</div>
+					          	</div>          
+					        </div>
+
+							<div class="col-md-4">
+					            <div class="card">
+					            	<img id="denId_03" class="card-img-top" src="./img/light_bulb.png" alt="Card image" style="width:100%">
+					            	<div class="card-body">
+					            		<h6>Living_Room SUB LED</h6>
+					              		<a href="#" class="btn btn-success" id="btnOnId_03">ON</a>
+					              		<a href="#" class="btn btn-danger" id="btnOffId_03">OFF</a>
+					            	</div>
+					          	</div>          
+					        </div>
+						</div>
+
+						<div class ="row">
+
+							<!--Tạo slider ngang -->
+							<div class ="col-md-6">
+								<div class="card">       
+					              	<img class="card-img-top" src="./img/light_bulb_off.png" alt="Card image" style="width:100%">                   
+					              	<div class="card-body">
+					                	<div class="btn-group">
+					                  		<span id="sliderNgangValue">1 </span>
+					                  		<input type="range" min="0" max="100" value="10" class="slider" id="sliderNgangId">
+					                	</div>
+					            	</div>
+					        	</div> 
+							</div>
+
+							<!--Tạo slider vòng tròn-->
+							<div class ="col-md-6">
+								<div class="card">
+						            <div id="sliderTronId_01" class="round-slider" style="margin: 25px;"></div>
+						            	<div class="card-body">
+						              		<div>TEMPERATURE: <span id = "temps">0</span></div>
+						            	</div>
+						        </div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--liên kết javascript-->
+		<script type="text/javascript" src="function.js"></script>
+	</body>
+</html>

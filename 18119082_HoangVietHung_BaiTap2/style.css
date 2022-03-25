@@ -1,0 +1,70 @@
+ul {
+	float: left;
+	margin-top: 1px;
+	margin-left: 150px;
+	list-style-type: none;
+	font-family: Arial;
+    color: #9e9e9e;
+    font-size: 13px;
+    padding-right: 13px;
+}
+
+.header {
+	border-bottom: 1px solid #d4cbcbf2;
+}
+
+ul li {
+	float: left;
+	margin-right: 10px;
+	padding: 7px;
+}
+
+.nav {
+	min-height: 30px;
+	background-color: #F7F8F9;
+}
+
+
+a{
+	color: #9e9e9e;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Arial;
+	margin-top: 1px;
+}
+
+.iconmagazine {
+	padding-top:1px;
+}
+
+.headercontent {
+	float: left;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+
+.lid {
+	max-height: 190px;
+	max-width: 180px;
+}
+
+.tinmoi {
+	float: left;
+}
+
+.tinmoitieude {
+	color: #e53333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial;
+    text-transform: uppercase;   
+    margin-top: 6px;
+    padding-left: 20px;
+}
+.headercontent1 {
+	float: left;
+	padding-left: 30px;
+	padding-top: 5px;
+}
+
+

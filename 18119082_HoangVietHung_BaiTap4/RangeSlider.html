@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RangeSlider</title>
+	<link rel="stylesheet" type="text/css" href="RangeSlider.css">
+</head>
+<body>
+	<div class="main">
+		<input type="range" min="0" max="100" value="20" title="HP" id="slider">
+		<div id="selector">
+			<div class="SelectBtn"></div>
+			<div id="SelectValue"></div>
+		</div>
+		<div id="progressBar"></div>
+	</div>
+	<script type="text/javascript">
+		var Slider = document.getElementById("slider");
+		var Selectvalue = document.getElementById("SelectValue");
+		var Selector = document.getElementById("selector");
+		var ProgressBar = document.getElementById("progressBar");
+
+		Selectvalue.innerHTML = Slider.value;
+
+		Slider.oninput = function(){
+			Selectvalue.innerHTML = this.value;
+			Selector.style.left = this.value + "%";
+			ProgressBar.style.width = this.value + "%";
+		}
+	</script>
+</body>
+</html>
